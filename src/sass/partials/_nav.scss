@@ -1,0 +1,16 @@
+.navbar-brand {
+  font-family: $headings-font-family;
+  font-weight: $font-weight-bold;
+  font-size: 20px;
+  font-style: italic;
+  margin-right: 4rem;
+}
+
+.nav-link {
+  padding: 0.1rem 0rem;
+  font-size: $paragraph-size;
+}
+
+.nav-link.active {
+  background: $white !important;
+}

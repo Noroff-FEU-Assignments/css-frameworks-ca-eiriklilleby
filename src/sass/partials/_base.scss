@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(#ffffff, #e5e5e5) !important;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+h1 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  color: $color-secondary;
+  font-size: $paragraph-size;
+}

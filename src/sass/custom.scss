@@ -1,0 +1,20 @@
+// Custom
+
+$color-primary: #e92569;
+$color-secondary: #767676;
+$color-light: #efefef;
+$color-dark: #0a0a0a;
+
+// Bootstrap
+$theme-colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "dark": $color-dark,
+  "light": $color-light,
+);
+
+// FONTS
+
+$font-family-base: "Lato", sans-serif;
+$headings-font-family: "Playfair Display", serif;
+$paragraph-size: 16px;
