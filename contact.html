@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The yay company. Contact us. Sumbit your details and send us a message!"
+    />
+    <title>YAY company | Contact</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand text-primary" href="index.html"
+          >The YAY Company</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="contact.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2 search__input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn nav__btn my-2 my-sm-0" type="submit">Go</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <main>
+        <div class="container-fluid contact__wrapper">
+          <div class="row">
+            <div class="col-md contact__container order-md-2">
+              <div class="contact__container-content">
+                <i class="fas fa-envelope"></i>
+                <p>hello@yay.com</p>
+              </div>
+              <div class="contact__container-content">
+                <i class="fas fa-phone"></i>
+                <p>123 456 7890</p>
+              </div>
+              <div class="contact__container-content">
+                <i class="fas fa-map-marker-alt ml-2"></i>
+                <div class="d-flex-column">
+                  <p>123 Some Street</p>
+                  <p>Somwhere</p>
+                  <p>Some City</p>
+                  <p>10000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md form__container order-md-1">
+              <h1>Sumbit your details</h1>
+              <form class="shadow">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="website">Website</label>
+                  <div class="input-group mb-2">
+                    <div
+                      class="input-group-prepend d-none d-sm-none d-md-block"
+                    >
+                      <div class="input-group-text">https://</div>
+                    </div>
+                    <input type="text" class="form-control" id="website" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="6"
+                  ></textarea>
+                </div>
+                <div class="form-group form-check">
+                  <label>
+                    <input type="checkbox" />
+                    <span
+                      >Allow us to sell your personal details to whomever we
+                      want</span
+                    >
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container-fluid">
+          <div class="footericons">
+            <i class="fab fa-vimeo-v"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+          <p class="footer__text-desktop">hello@yay.com</p>
+          <p class="footer__text-desktop">Copyright 2020</p>
+          <div class="footer__text-mobile">
+            <p>hello@yay.com</p>
+            <p>Copyright 2020</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

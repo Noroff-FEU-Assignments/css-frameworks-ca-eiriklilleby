@@ -1,0 +1,16 @@
+.pagination {
+  margin: 3rem 0;
+}
+
+.page-link {
+  border-color: $primary;
+  &:hover {
+    color: $white;
+    background: $primary;
+    border: 1px solid $primary;
+  }
+}
+
+.margin__extender {
+  margin-bottom: 15rem;
+}

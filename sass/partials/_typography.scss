@@ -1,0 +1,33 @@
+$font-family-base: "Lato", sans-serif;
+$headings-font-family: "Playfair Display", serif;
+$paragraph-size: 16px;
+$font-primary-size: 20px;
+$font-secondary-size: 18px;
+$tabs-size: 19px;
+$heading-size: 34px;
+$tab-icon-size: 28px;
+$card-p-size: 18px;
+$icon-size: 36px;
+$input-btn: 22px;
+$input-text-prepend: 17px;
+$label-size: 15px;
+
+body {
+  font-family: $font-family-base;
+}
+
+h1 {
+  font-family: $headings-font-family;
+  color: $primary;
+  font-size: $heading-size;
+}
+
+h2 {
+  color: $dark;
+  font-size: $font-primary-size;
+}
+
+p {
+  font-size: $paragraph-size;
+  color: $secondary;
+}
