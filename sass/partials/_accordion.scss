@@ -1,0 +1,49 @@
+.accordion {
+  margin-bottom: 10rem;
+
+  .card {
+    border-radius: 1rem;
+  }
+  .card-header {
+    border-bottom: 1px solid $primary;
+    background: $white;
+
+    .btn-link {
+      font-size: $tabs-size;
+      text-decoration: none;
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    background: $light;
+    margin-top: 1px;
+
+    img {
+      width: 90%;
+    }
+
+    p {
+      width: 90%;
+    }
+
+    .social__accordian {
+      display: flex;
+      margin-top: 1rem;
+
+      i {
+        font-size: $icon-size;
+      }
+      .social__text {
+        color: $dark;
+      }
+      .fa-facebook-f {
+        margin: 0 1rem;
+      }
+    }
+  }
+}

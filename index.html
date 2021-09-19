@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The yay company. We do yay things." />
+    <title>YAY company</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand text-primary" href="index.html"
+          >The YAY Company</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2 search__input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn nav__btn my-2 my-sm-0" type="submit">Go</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper home__container">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="1"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner embed-responsive embed-responsive-21by9">
+          <div
+            class="carousel-item embed-responsive-item"
+            style="background-image: url(CarouselImages/carousel-2.jpg)"
+          ></div>
+          <div
+            class="carousel-item active embed-responsive-item"
+            style="background-image: url(CarouselImages/carousel-1.jpg)"
+          ></div>
+          <div
+            class="carousel-item embed-responsive-item"
+            style="background-image: url(CarouselImages/carousel-3.jpg)"
+          ></div>
+        </div>
+      </div>
+
+      <main>
+        <div class="container-fluid">
+          <h1>We do YAY things</h1>
+          <p class="intro__text">
+            Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi,
+            a rutrum justo eros pretium libero. Nullam vel enim id mauris
+            eleifend finibus et ac orci. Aliquam metus massa, aliquam quis arcu
+            sit amet, consectetur faucibus urna. Suspendisse massa diam,
+            efficitur eu massa euismod, pretium lacinia magna. Donec mi orci,
+            sollicitudin in luctus a, varius eget massa.
+          </p>
+        </div>
+
+        <div class="container-fluid">
+          <div class="accordion d-lg-none d-md-none" id="accordionExample">
+            <div class="card shadow-lg">
+              <div class="card-header shadow-lg" id="headingOne">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    First
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body shadow-lg">
+                  <p>
+                    Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                    massa, venenatis pharetra leo laoreet a. Nullam non eleifend
+                    justo, a ullamcorper turpis. Cras vehicula pharetra lectus
+                    non maximus. Sed condimentum mattis rhoncus.
+                  </p>
+                  <img src="./TabImages/tab-1.jpg" alt="" />
+                  <div class="social__accordian">
+                    <p class="social__text">SHARE</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-lg">
+              <div class="card-header shadow lg" id="headingTwo">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Second
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body shadow-lg">
+                  <p>
+                    Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                    massa, venenatis pharetra leo laoreet a. Nullam non eleifend
+                    justo, a ullamcorper turpis. Cras vehicula pharetra lectus
+                    non maximus. Sed condimentum mattis rhoncus.
+                  </p>
+                  <img src="./TabImages/tab-2.jpg" alt="" />
+                  <div class="social__accordian">
+                    <p class="social__text">SHARE</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-lg">
+              <div class="card-header shadow-lg" id="headingThree">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Third
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body shadow-lg">
+                  <p>
+                    Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                    massa, venenatis pharetra leo laoreet a. Nullam non eleifend
+                    justo, a ullamcorper turpis. Cras vehicula pharetra lectus
+                    non maximus. Sed condimentum mattis rhoncus.
+                  </p>
+                  <img src="./TabImages/tab-3.jpg" alt="" />
+                  <div class="social__accordian">
+                    <p class="social__text">SHARE</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid d-none d-lg-block d-md-block">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="home-tab"
+                data-toggle="tab"
+                href="#nav-first"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >First</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#nav-second"
+                role="tab"
+                aria-controls="nav-second-tab"
+                aria-selected="false"
+                >Second</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#nav-third"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >Third</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content shadow lg" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="nav-first"
+              role="tabpanel"
+              aria-labelledby="nav-first-tab"
+            >
+              <div class="container__tab">
+                <img src="./TabImages/tab-1.jpg" alt="" />
+                <div class="container__text-icon">
+                  <p class="info__text">
+                    Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                    massa, venenatis pharetra leo laoreet a. Nullam non eleifend
+                    justo, a ullamcorper turpis. Cras vehicula pharetra lectus
+                    non maximus. Sed condimentum mattis rhoncus.
+                  </p>
+                  <div class="container__icon">
+                    <p class="social__text">SHARE</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-second"
+              role="tabpanel"
+              aria-labelledby="nav-second-tab"
+            >
+              <div class="container__tab">
+                <img src="./TabImages/tab-2.jpg" alt="" />
+                <div class="container__text-icon">
+                  <p class="info__text">
+                    Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                    massa, venenatis pharetra leo laoreet a. Nullam non eleifend
+                    justo, a ullamcorper turpis. Cras vehicula pharetra lectus
+                    non maximus. Sed condimentum mattis rhoncus.
+                  </p>
+                  <div class="container__icon">
+                    <p class="social__text">SHARE</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-third"
+              role="tabpanel"
+              aria-labelledby="nav-contact-tab"
+            >
+              <div class="container__tab">
+                <img src="./TabImages/tab-3.jpg" alt="" />
+                <div class="container__text-icon">
+                  <p class="info__text">
+                    Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                    massa, venenatis pharetra leo laoreet a. Nullam non eleifend
+                    justo, a ullamcorper turpis. Cras vehicula pharetra lectus
+                    non maximus. Sed condimentum mattis rhoncus.
+                  </p>
+                  <div class="container__icon">
+                    <p class="social__text">SHARE</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container-fluid">
+          <div class="footericons">
+            <i class="fab fa-vimeo-v"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+          <p class="footer__text-desktop">hello@yay.com</p>
+          <p class="footer__text-desktop">Copyright 2020</p>
+          <div class="footer__text-mobile">
+            <p>hello@yay.com</p>
+            <p>Copyright 2020</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

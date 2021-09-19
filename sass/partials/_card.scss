@@ -1,0 +1,49 @@
+.card__content {
+  .card {
+    background: $white;
+    border-radius: 1rem;
+    box-shadow: $box-shadow;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      background-position: center;
+      background-size: cover;
+
+      img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+    }
+    .card-text {
+      font-size: $card-p-size;
+    }
+
+    .btn-primary {
+      width: 100%;
+      border-radius: 0.4rem;
+      position: relative;
+      height: 3rem;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .btn__special {
+        width: 10%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-top-right-radius: 0.4rem;
+        border-bottom-right-radius: 0.4rem;
+        height: 3rem;
+        background: $secondary;
+      }
+    }
+  }
+}

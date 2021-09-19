@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(229, 229, 229, 1) 100%
+  );
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.container-fluid {
+  width: 90%;
+}
+
+.home__container {
+  @media (max-width: $breakpoint-lg) {
+    margin-top: 5rem;
+  }
+}
+
+.news__container {
+  @media (max-width: $breakpoint-lg) {
+    margin-top: 8rem;
+  }
+}
+
+main {
+  margin-top: 2rem;
+  min-height: 70vh;
+
+  .intro__text {
+    margin: 1rem 0 4rem 0;
+  }
+}

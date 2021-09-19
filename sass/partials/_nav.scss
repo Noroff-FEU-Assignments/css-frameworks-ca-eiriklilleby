@@ -1,0 +1,129 @@
+.navbar {
+  padding: 0.5rem 0rem !important;
+  @media (max-width: $breakpoint-lg) {
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+    z-index: 9999999999;
+    box-shadow: $box-shadow !important;
+  }
+}
+
+nav {
+  .container-fluid {
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .navbar-brand {
+    font-family: $headings-font-family;
+    font-size: $font-primary-size;
+    font-style: italic;
+    margin-right: 4rem;
+
+    @media (max-width: $breakpoint-lg) {
+      margin: 1rem 0 1rem 2rem;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    margin-right: 2rem;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url(/svg/Hamburger.svg) !important;
+    margin-top: 0.5rem;
+  }
+
+  .nav-link {
+    font-size: $paragraph-size;
+    color: $dark !important;
+
+    @media (max-width: $breakpoint-lg) {
+      font-size: $font-secondary-size;
+      margin-left: 2.5rem;
+    }
+  }
+
+  .nav-item {
+    margin-right: 1.5rem;
+
+    @media (max-width: $breakpoint-lg) {
+      margin: 2rem 0 0 1rem;
+    }
+  }
+
+  .nav-item.active {
+    background: $white;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    margin-top: 0.3rem;
+
+    @media (max-width: $breakpoint-lg) {
+      min-width: 130%;
+      height: 4rem;
+      margin: 1.5rem 0rem 0 -4rem;
+      justify-content: flex-start;
+      padding-left: 5rem;
+    }
+  }
+
+  .search__input {
+    border: none;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    padding-left: 1rem;
+    height: 2.5rem;
+  }
+
+  .form-inline .form-control {
+    width: 16rem;
+
+    @media (max-width: $breakpoint-lg) {
+      width: 85%;
+      height: 3.5rem;
+      margin: 3rem 0 0 2.5rem;
+    }
+  }
+
+  .nav__btn {
+    margin: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.3rem;
+    color: $white;
+    border: none;
+    background: $primary;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+
+    &:hover {
+      color: $primary;
+      background: $white;
+      border: 1px solid $primary;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+      margin-top: 3rem !important;
+      height: 3.5rem;
+      width: 3rem;
+    }
+    @media (max-width: 600px) {
+      margin-top: 3.5rem !important;
+    }
+  }
+}
